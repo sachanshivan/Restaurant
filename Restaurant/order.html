@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu - Delizus</title>
+    <link rel="stylesheet" href="css/cafe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align:center; margin:50px 0; font-family:cursive;">Our Menu</h1>
+
+        <div class="offers-container">
+
+            <div class="offer-card">
+                <div class="offer-img">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/019e0f86158871.5d918cad73888.jpg" alt="Burger">
+                </div>
+                <div class="offer-content">
+                    <h3>Menu Card</h3>
+                    <p>The following is a list of the foods available in our restaurant.</p>
+                    <h6>$15</h6>
+                    <button class="order-btn" onclick="orderItem('Burger',15)">
+                        Order <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="offer-card">
+                <div class="offer-img">
+                    <img src="https://i.pinimg.com/736x/4c/81/8a/4c818a3c0a47c0115455a173c8c1c940.jpg   " alt="Pizza">
+                </div>
+                <div class="offer-content">
+                    <h3>Dinner Special</h3>
+                    <p>Feel free to eat have meals in less money fast food, itallian,chinese and indian all kind of food we can provide to you.</p>
+                    <h6>$20</h6>
+                    <button class="order-btn" onclick="orderItem('Pizza',20)">
+                        Order <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="offer-card">
+                <div class="offer-img">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.2E29PX_Qfm2E82CIhYa2KwHaEK?pid=Api&P=0&h=180" alt="Pasta">
+                </div>
+                <div class="offer-content">
+                    <h3>Chinese Style</h3>
+                    <p>Chinese food is super yammy.</p>
+                    <h6>$15</h6>
+                    <button class="order-btn" onclick="orderItem('Pasta',18)">
+                        Order <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="offer-card">
+                <div class="offer-img">
+                    <img src="https://www.eatwell101.com/wp-content/uploads/2019/07/ok-chicken-skillet-recipe.jpg" alt="Pasta">
+                </div>
+                <div class="offer-content">
+                    <h3>/kadai Paneer</h3>
+                    <p>Desi style kadai paneer, swad best har chij me best.</p>
+                    <h6>$25</h6>
+                    <button class="order-btn" onclick="orderItem('Pasta',18)">
+                        Order <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="offer-card">
+                <div class="offer-img">
+                    <img src="https://rakskitchen.net/wp-content/uploads/2013/11/10867983783_854a7fec8f_o.jpg" alt="Pasta">
+                </div>
+                <div class="offer-content">
+                    <h3>Special Thali</h3>
+                    <p>Yaha milta hai ghar ka khana yaad rkhna aur hammse aana.</p>
+                    <h6>$30</h6>
+                    <button class="order-btn" onclick="orderItem('Pasta',18)">
+                        Order <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="offer-card">
+                <div class="offer-img">
+                    <img src="https://media.glamour.com/photos/582b59d6bba832ac65bbf89e/master/pass/GettyImages-56307555.jpg" alt="Pasta">
+                </div>
+                <div class="offer-content">
+                    <h3>Pizza Chapati</h3>
+                    <p>Bacho ka pasandida khana roj khana swasth rahna.</p>
+                    <h6>$18</h6>
+                    <button class="order-btn" onclick="orderItem('Pasta',18)">
+                        Order <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="offer-card">
+                <div class="offer-img">
+                    <img src="https://hurrythefoodup.com/wp-content/uploads/2022/09/healthy-quick-lunch-ideas.jpg" alt="Pasta">
+                </div>
+                <div class="offer-content">
+                    <h3>Healthy Breakfast</h3>
+                    <p>Patle hona hai to roj khana matr 500rs me itna sasta milta nhi kahi .</p>
+                    <h6>$19</h6>
+                    <button class="order-btn" onclick="orderItem('Pasta',18)">
+                        Order <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="offer-card">
+                <div class="offer-img">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.KtEm98mF6k9lTSax8mcTfQHaHa?pid=Api&P=0&h=180" alt="Pasta">
+                </div>
+                <div class="offer-content">
+                    <h3>Veg Special Bhog Thali</h3>
+                    <p>56 bhog ki thali ek bar khao mast ho jao.</p>
+                    <h6>$20</h6>
+                    <button class="order-btn" onclick="orderItem('Pasta',18)">
+                        Order <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div style="text-align:center; margin-top:30px;">
+            <h2>Cart Total: $<span id="cartTotal">0</span></h2>
+            <button onclick="checkout()" style="padding:10px 20px; border:none; border-radius:10px; background:#ffbe33; cursor:pointer;">
+                Place Order
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let total = 0;
+
+        function orderItem(name, price) {
+            total += price;
+            document.getElementById('cartTotal').innerText = total;
+            alert(`${name} added to your order!`);
+        }
+
+        function checkout() {
+            if(total === 0){
+                alert("Please add some food to your order first!");
+            } else {
+                alert(`Your order of $${total} has been placed! Thank you for ordering.`);
+                total = 0;
+                document.getElementById('cartTotal').innerText = total;
+            }
+        }
+    </script>
+</body>
+</html>
